@@ -6,14 +6,41 @@
     height: 100%;
     margin: 0;
   }
-  .bg {
+  .bg, .title-bg {
     background-image: url("./titlebar.jpg");
-    height:50%;
-    background-position:top;
+    height: 70%;
+    background-position:center top;
     background-repeat:no-repeat;
     background-size:cover;
   }
+
+  .title-container {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .title {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: rgb(34, 34, 34); /* ie compatibility, god help you */
+    background: rgba(34, 34, 34, 0.75);
+    position: center;
+  }
+
+  .title-container {
+    position:relative;
+  }
+  .header {
+    color: white;
+    text-align: center;
+  }
 </style>
+  <head>
+      <title>Michael McGloin</title>
+      <meta c harset=="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+  </head>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <a class="navbar-brand" href="index.html">Home</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="true" aria-label="Toggle navigation">
@@ -25,27 +52,25 @@
         <a class="nav-link" href="aboutme.html">About Me</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Projects</a>
+        <a class="nav-link" href="projects.html">Projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Other Sites</a>
+        <a class="nav-link" href="contact.html">Contact</a>
       </li>
     </ul>
   </div>
 </nav>
 <div class='bg'>
-<head>
-    <title>Michael McGloin</title>
-    <meta c harset=="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://bootswatch.com/4/sandstone/bootstrap.min.css">
-</head>
-<body>
-  <div class="container">
-    <br><br><br><!-- <img src="img.jpg" alt="img" style="float:right;width:720px;height:500px;"> -->
-    <h1>Heading 1</h1>
-    <p> paragraph 1.</p>
-  </div>
-</body>
+  <br><br><br>
+  <div class="title-container">
+      <div class="title" style="width: 50%; float: center">
+        <!--<img src="img.jpg" alt="img" style="float:right;width:721px;height:500px;">-->
+        <h1 class="header">Michael Stephen McGloin</h1>
+        <h3 class="header">Computer Science Major</h3>
+        <p class="header">
+
+        </p>
+      </div>
+    </div>
 </div>
 </html>
