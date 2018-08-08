@@ -18,11 +18,6 @@
     padding-right: 50px;
   }
 
-  .title-container {
-    padding-left: 200px;
-    padding-right: 200px;
-  }
-
   .title {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -61,7 +56,7 @@
           <a class="nav-link" onclick="document.getElementById('projects').scrollIntoView()">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="document.getElementById('contact').scrollIntOview">Contact</a>
+          <a class="nav-link" href="document.getElementById('contact').scrollIntoView">Contact</a>
         </li>
       </ul>
     </div>
@@ -70,31 +65,36 @@
 <div>
 </div>
 <div id="home" class='bg'>
-  <div class="title-container">
-      <div class="title" style="text-align: left;  width: 45%; float: right">
-        <h1 class="header">Michael Stephen McGloin</h1>
-        <h3 class="header">Computer Science Major</h3>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6">
+        <div class="title" style="text-align: right">
+          <h3 class="header">Hey</h3>
+          <p class="header">
+            This site isn't intended to be the most informative thing ever, as
+            the good stuff is already in my resume. This site is more of a
+            personal challenge to create a site of my own more or less from
+            scratch. If this paragraph is still here like this, I'm likely still
+            working on it, so things might not be exactly perfect yet.
+          </p>
+        </div>
       </div>
-      <div class="title" style="text-align: right; width: 45%; float: left;">
-        <h3 class="header">Hey</h3>
-        <p class="header">
-          This site isn't intended to be the most informative thing ever, as
-          the good stuff is already in my resume. This site is more of a
-          personal challenge to create a site of my own more or less from
-          scratch. If this paragraph is still here like this, I'm likely still
-          working on it, so things might not be exactly perfect yet.
-        </p>
+      <div class="col-6">
+        <div class="title" style="text-align: left">
+          <h1 class="header">Michael Stephen McGloin</h1>
+          <h3 class="header">Computer Science Major</h3>
+        </div>
       </div>
     </div>
+  </div>
 </div>
-<div class="container" style="height: 100%"><!-- I might not want 100% height-->
-  <div id="aboutme"><br><br><br></div>
+<div id="aboutme" class="container" style="padding-top: 90px; padding-bottom: 40px; overflow: hidden"><!-- I might not want 100% height-->
+  <h1>About Me</h1>
   <div class="progress">
     <div class="progress-bar" role="progressbar" style="width: 100%;"
     aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
   </div>
   <br><br>
-  <h1> About Me </h1>
   <div style="width: 50%; float: left">
     <p>
       I'm Mike, A CS major at JMU. I love coding and am always excited to learn
@@ -116,14 +116,117 @@
       forums as a kid, but knew after I took that class that coding was my
       career.
     </p>
+    <p>
+      Nowadays, my main art form is guitar, and I've recently started taking
+      lessons again. I don't know that I'd call myself a pro or anything but it
+      is fun to do.
+    </p>
+    <p>
+      While I wouldn't say that I have a specific 'perfect job' that I'm looking
+      for yet, I am trying to get as much experience as I can before I get out
+      of college.
+    </p>
+  </div>
+  <div style="width: 50%; float: right; text-align: right">
+    <img src="https://avatars1.githubusercontent.com/u/8991257?s=460&v=4">
   </div>
 </div>
-<div class="container" style="height: 100%">
-  <div id="projects"><br><br><br></div>
+<div id="projects" class="container-fluid" style="background: rgb(230,230,230)">
+  <div class="container" style="padding-top: 90px; padding-bottom: 40px">
+    <h1>Projects</h2>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 100%;"
+      aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <br><br>
+    <div class="card text-white bg-primary mb-3">
+      <div class="card-header">Html + CSS + Bootstrap</div>
+      <div class="card-body">
+        <h4 class="card-title">Personal Site</h4>
+        <p class="card-text">
+          This site was built with html/css as a test to see if I could put
+          together something that was modern and styleish, while still giving
+          relevant information. Built mainly with html/css the styling for the
+          site uses bootswatch's lux template.
+        </p>
+        <button type="button" class="btn btn-success"
+        onclick="window.location.href='https://github.com/Advill/Advill.github.io'"
+        >Github</button>
+        <button type="button" class="btn btn-info"
+        onclick="window.location.href='https://bootswatch.com/lux'"
+        >Bootswatch</button>
+      </div>
+    </div>
+    <br>
+    <div class="card text-white bg-primary mb-3">
+      <div class="card-header">Html + CSS / Postgresql / Node.js</div>
+      <div class="card-body">
+        <h4 class="card-title">Veri-safe</h4>
+        <p class="card-text">
+          Veri-safe was the intern hack-a-thon project done at SWIFT. I worked
+          with other interns to try to solve a problem facing the company. As
+          SWIFT is a very security-focused company, we decided to use the
+          OpenALPR library to scan incoming vehicle license plates to determine
+          if they were SWIFT employees or unknown vehicles.
+        </p>
+        <p class="card-text">
+          The main part of this project that I wored on was the Node interface
+          with the ALPR library, as well as the 'front-half' of the backend
+          server.
+        </p>
+        <button type="button" class="btn btn-success"
+        onclick="window.location.href='https://github.com/Advill/Veri-safe'">
+        Github</button>
+        <button type="button" class="btn btn-info"
+        onclick="window.location.href='https://github.com/openalpr/openalpr'">
+        OpenALPR</button>
+      </div>
+    </div>
+    <br>
+    <div class="card text-white bg-primary mb-3">
+      <div class="card-header">Python / Yaml / Json</div>
+      <div class="card-body">
+        <h4 class="card-title">PCDB</h4>
+        <p class="card-text">
+          PCDB is SWIFT's automation of ansible setup scripts for specific
+          applications and machines. Because of the wide variety of requirements
+          for applications SWIFT is developing, we wanted to give users the
+          ability to dictate how a system is configured so they can focus on
+          development.
+        </p>
+        <p class="card-text">
+          The PCDB system was only in the beginning stages of development during
+          my time at SWIFT, but the idea behind it was very cool to me. The
+          goal was to have the user input a Yaml file to the program, have
+          internal json-schema validation to ensure that the user has included
+          all variables that are needed, and finally spin up a VM and run
+          ansible playbooks to set up requested programs.
+        </p>
+        <p class="text-danger">SWIFT internal product</p>
+      </div>
+    </div>
+    <br>
+    <div class="card text-white bg-primary mb-3">
+      <div class="card-header">C / Assembly</div>
+      <div class="card-body">
+        <h4 class="card-title">Y86</h4>
+        <p class="card-text">
+          Y86 is a fake processer that we emulated for our Computer
+          Systems class. The project was intended to show the inner workings of
+          a real processor by creating a stripped-down version and showing every
+          step of the process. The Y86 Emulator could take .y86 program files,
+          extract information including the headers, program headers, as well as
+          any code or data stored within, converted to human-readable format.
+        </p>
+        <p class="text-danger">In-class Project</p>
+      </div>
+  </div>
+</div>
+<div id="contact" class="container" style="padding-top: 90px; padding-bottom:40px">
+  <h1>Contact</h1>
   <div class="progress">
     <div class="progress-bar" role="progressbar" style="width: 100%;"
     aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
   </div>
-  <br><br>
 </div>
 </html>
