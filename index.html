@@ -8,10 +8,14 @@
   }
   .bg, .title-bg {
     background-image: url("./titlebar.jpg");
-    height: 91%;
+    height: 100%;
     background-position:center top;
     background-repeat:no-repeat;
     background-size:cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 150px;
+    padding-right: 50px;
   }
 
   .title-container {
@@ -20,8 +24,8 @@
   }
 
   .title {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 30px;
     padding-right: 30px;
     background: rgb(34, 34, 34); /* ie compatibility, god help you */
@@ -34,55 +38,58 @@
   .header {
     color: white;
   }
+
 </style>
   <head>
       <title>Michael McGloin</title>
-      <meta c harset=="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta c harset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
   </head>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="index.html">Home</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="true" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="navbar-collapse collapse show" id="navbarColor01" style="">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="aboutme.html">About Me</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="projects.html">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<div class='bg'>
-  <br><br><br>
+  <div style="position: fixed; width: 100%; z-index: 100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" onclick="top()">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarColor01" aria-controls="navbarColor01"
+    aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse show" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="aboutme.html">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div>
+</div>
+<div id="home" class='bg'>
   <div class="title-container">
-      <div class="title" style="text-align: left;  width: 45%; float: right;">
-        <!--<img src="img.jpg" alt="img" style="float:right;width:721px;height:500px;">-->
+      <div class="title" style="text-align: left;  width: 45%; float: right">
         <h1 class="header">Michael Stephen McGloin</h1>
         <h3 class="header">Computer Science Major</h3>
       </div>
-
       <div class="title" style="text-align: right; width: 45%; float: left;">
         <h3 class="header">Hey</h3>
         <p class="header">
-          biggi boy blazer
-          <br>
-          ayy macerana
+          I'm Michael, A rising junior at James Madison University.
         </p>
       </div>
     </div>
 </div>
+<br><br><br>
 <div class="container">
-  <h1> About Me
+  <h1> About Me </h1>
   <p>
-
+    I like things
   </p>
 </div>
 </html>
