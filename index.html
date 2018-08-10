@@ -1,49 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<style>
-  body, html {
-    height: 100%;
-    margin: 0;
-  }
-  .bg, .title-bg {
-    background-image: url("./titlebar.jpg");
-    height: 100%;
-    background-position:center top;
-    background-repeat:no-repeat;
-    background-size:cover;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    padding-left: 150px;
-    padding-right: 50px;
-  }
-
-  .title {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background: rgb(34, 34, 34); /* ie compatibility, god help you */
-    background: rgba(34, 34, 34, 0.60);
-  }
-
-  .title-container {
-    position:relative;
-  }
-  .header {
-    color: white;
-  }
-
-</style>
   <head>
       <title>Michael McGloin</title>
       <meta c harset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <link rel="stylesheet" href="./css/bootstrap.min.css">
+      <link rel="stylesheet" href="./css/common.css">
   </head>
-  <div style="position: fixed; width: 100%; z-index: 100">
+  <div style="position: fixed; width: 100%; z-index: 100; background:rgba(255,255,255,0)">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" onclick="document.getElementById('home').scrollIntoView()">replace me</a>
+    <a class="navbar-brand" onclick="document.getElementById('home').scrollIntoView()">Replace me</a>
     <div class="navbar-collapse collapse show" id="navbarColor01">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
@@ -56,7 +22,7 @@
           <a class="nav-link" onclick="document.getElementById('projects').scrollIntoView()">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="document.getElementById('contact').scrollIntoView">Contact</a>
+          <a class="nav-link" onclick="document.getElementById('contact').scrollIntoView()">Contact</a>
         </li>
       </ul>
     </div>
@@ -64,27 +30,11 @@
 </div>
 <div>
 </div>
-<div id="home" class='bg'>
+<div id="home" class='bg' style="overflow: hidden">
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-6">
-        <div class="title" style="text-align: right">
-          <h3 class="header">Hey</h3>
-          <p class="header">
-            This site isn't intended to be the most informative thing ever, as
-            the good stuff is already in my resume. This site is more of a
-            personal challenge to create a site of my own more or less from
-            scratch. If this paragraph is still here like this, I'm likely still
-            working on it, so things might not be exactly perfect yet.
-          </p>
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="title" style="text-align: left">
-          <h1 class="header">Michael Stephen McGloin</h1>
-          <h3 class="header">Computer Science Major</h3>
-        </div>
-      </div>
+    <div class="title" style="text-align: center">
+      <h1 class="header">Michael Stephen McGloin</h1>
+      <h3 class="header">Computer Science Major</h3>
     </div>
   </div>
 </div>
@@ -95,40 +45,41 @@
     aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
   </div>
   <br><br>
-  <div style="width: 50%; float: left">
-    <p>
-      I'm Mike, A CS major at JMU. I love coding and am always excited to learn
-      new languages, tools, and libraries. I am looking for internships that
-      will challenge me to experiment with new and exciting tools to find
-      solutions.
-    </p>
-    <p>
-      I've moved around most of my life as my dad was in the army for 22 years,
-      but would call virginia my hometown, as I've lived here for the longest
-      (13 years!).
-    </p>
-    <p>
-      I went to South County High School, where I took mainly art
-      classes and Spanish for my electives. I was, and still am, very interested
-      in computer graphics, photography and drawing. My last year I took AP
-      computer science and fell in love. I had known I liked computers, and had
-      the slightest bit of coding experience from hanging out on code/game
-      forums as a kid, but knew after I took that class that coding was my
-      career.
-    </p>
-    <p>
-      Nowadays, my main art form is guitar, and I've recently started taking
-      lessons again. I don't know that I'd call myself a pro or anything but it
-      is fun to do.
-    </p>
-    <p>
-      While I wouldn't say that I have a specific 'perfect job' that I'm looking
-      for yet, I am trying to get as much experience as I can before I get out
-      of college.
-    </p>
-  </div>
-  <div style="width: 50%; float: right; text-align: right">
-    <img src="https://avatars1.githubusercontent.com/u/8991257?s=460&v=4">
+  <div class="row">
+    <div class="col-8">
+      <p>
+        I'm Mike, A CS major at JMU. I love coding and am always excited to learn
+        new languages, tools, and libraries. I am looking for internships that
+        will challenge me to experiment with new and exciting tools to find
+        solutions.
+      </p>
+      <p>
+        I've moved around most of my life as my dad was in the army for 22 years,
+        but would call virginia my hometown, as I've lived here for the longest.
+      </p>
+      <p>
+        I went to South County High School, where I took mainly art
+        classes and Spanish for my electives. I was, and still am, very interested
+        in computer graphics, photography and drawing. My last year I took AP
+        computer science and fell in love. I had known I liked computers, and had
+        the slightest bit of coding experience from hanging out on code/game
+        forums as a kid, but knew after I took that class that coding was my
+        career.
+      </p>
+      <p>
+        Nowadays, my main art form is guitar, and I've recently started taking
+        lessons again. I don't know that I'd call myself a pro or anything but it
+        is fun to do.
+      </p>
+      <p>
+        While I wouldn't say that I have a specific 'perfect job' that I'm looking
+        for yet, I am trying to get as much experience as I can before I get out
+        of college.
+      </p>
+    </div>
+    <div class="col-4" style="text-align: right">
+      <img src="https://avatars1.githubusercontent.com/u/8991257?s=460&v=4">
+    </div>
   </div>
 </div>
 <div id="projects" class="container-fluid" style="background: rgb(230,230,230)">
@@ -184,7 +135,7 @@
     </div>
     <br>
     <div class="card text-white bg-primary mb-3">
-      <div class="card-header">Python / Yaml / Json</div>
+      <div class="card-header">Python / Yaml / JsonSchema</div>
       <div class="card-body">
         <h4 class="card-title">PCDB</h4>
         <p class="card-text">
@@ -218,8 +169,26 @@
           extract information including the headers, program headers, as well as
           any code or data stored within, converted to human-readable format.
         </p>
-        <p class="text-danger">In-class Project</p>
+        <p class="text-danger">Class Project</p>
       </div>
+    </div>
+    <br>
+    <div class="card text-white bg-primary mb-3">
+      <div class="card-header">Java + Swing</div>
+      <div class="card-body">
+        <h4 class="card-title">Pyrex Sorter</h4>
+        <p class="card-text">
+          The priex sorter was a project done for our Software Engineering class,
+          intended first and foremost to show us how real-world Scrum practices
+          work. The project was built using SVN as a version-control system and
+          Vivify Scrum as our Scrum board. The program was intended to hold a
+          'library' of text documents and be able to quickly and accuratly
+          search for words in that library, and return the sentence and
+          paragraph they were contained in.
+        </p>
+        <p class="text-danger">Class Project</p>
+      </div>
+    </div>
   </div>
 </div>
 <div id="contact" class="container" style="padding-top: 90px; padding-bottom:40px">
@@ -227,6 +196,11 @@
   <div class="progress">
     <div class="progress-bar" role="progressbar" style="width: 100%;"
     aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+</div>
+<div class="card text-white bg-primary" style="background: rgb(240,240,240); padding-top: 20px; padding-bottom: 20px">
+  <div class="container"
+    <h4>All photos copyright Michael McGloin</h4>
   </div>
 </div>
 </html>

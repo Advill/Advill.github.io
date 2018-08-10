@@ -1,0 +1,29 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+.bg, .title-bg {
+  background-image: url("../Images/titlebar.jpg");
+  height: 100%;
+  background-position:center top;
+  background-repeat:no-repeat;
+  background-size:cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: rgb(34, 34, 34); /* ie compatibility, god help you */
+  background: rgba(34, 34, 34, 0.60);
+}
+
+.title-container {
+  position:relative;
+}
+.header {
+  color: white;
+}
