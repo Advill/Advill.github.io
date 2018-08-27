@@ -16,8 +16,8 @@ body, html {
 
 .bg {
   background-position:center top;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 250px;
+  padding-bottom: 250px;
 }
 
 .title-bg {
@@ -42,7 +42,7 @@ body, html {
   padding-left: 30px;
   padding-right: 30px;
   background: rgb(34, 34, 34);
-  background: rgba(34, 34, 34, 0.60);
+  background: rgba(34, 34, 34, 0.50);
   text-align: center;
   position:relative;
   /*this line was the problem for stacking opacity stuff^ */
